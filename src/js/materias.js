@@ -20,11 +20,24 @@ formAddMateriaConteudo.addEventListener('submit', function(e) {
         const newLine = document.createElement('tr');
         const colunaMateria = document.createElement('td');
         const colunaConteudo = document.createElement('td');
-
         const colunaCheck = document.createElement('td');
+        const deleteText = document.createElement('td');
+
         const checkBox = document.createElement('input');
         checkBox.type = 'checkbox';
         colunaCheck.appendChild(checkBox);
+
+        const deleteBttn = document.createElement('button');
+        deleteBttn.type = 'button';
+        deleteBttn.textContent = "delete";
+        deleteBttn.classList.add('delete-btn');
+        deleteBttn.addEventListener('click', function(event) {
+            const row = event.target.closest('tr');
+            if (row) {
+                row.remove();
+            }
+        });
+        deleteText.appendChild(deleteBttn);
 
         colunaMateria.textContent = nameMateriaValue;
         colunaConteudo.textContent = nameConteudoValue;
@@ -32,6 +45,7 @@ formAddMateriaConteudo.addEventListener('submit', function(e) {
         newLine.appendChild(colunaMateria);
         newLine.appendChild(colunaConteudo);
         newLine.appendChild(colunaCheck);
+        newLine.appendChild(deleteText);
 
         bodyTable.appendChild(newLine);
 
