@@ -159,15 +159,10 @@ html, body {
     height: 490px;
     background-color: #202020;
     border: 3px solid #404040;
-    border-radius: 8%;
-    overflow-y: auto; 
+    border-radius: 5%;
     overflow-y: auto; 
     overflow-x: hidden;
     box-sizing: border-box;
-    
-    padding-top: 80px;   
-    padding-left: 50px;  
-    padding-right: 20px; 
 }
 
 
@@ -216,7 +211,7 @@ html, body {
 
 .add-materia-conteudo button {
     position: absolute !important;
-    background-color: rgb(0, 245, 192);
+    background-color:rgb(0, 245, 221);
     border: none;
     color: #141313;
     padding: 10px 20px;
@@ -258,53 +253,56 @@ html, body {
 
 
 /*tabela */ 
+.interno table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
 .title-table {
-    position: absolute;
-    left: 17px;
-    top: 40px;
-    width: 380px; 
-    display: table; 
-    color: white;
     font-family: 'Special Gothic Expanded One', sans-serif !important;
-    font-size: 20px;
+    font-size: 15px;
+    color:rgb(0, 245, 221);
 }
 
 .title-table th {
-    font-weight: 500;
+    font-weight: 900;
+    border: 3px solid #141313;
+    padding: 10px 12px;
+    text-align: center;
+    background-color: #202020;
+    cursor: default;
 }
 
-.body-table {
-    width: 100%; 
-    display: table;
-    border-collapse: collapse;
-    table-layout: fixed;
-    position: relative;
-    left: -24px;
+.title-table th:nth-child(3),
+.title-table th:nth-child(4) {
+    width: 60px;
+    text-align: center;
 }
 
 .body-table td {
     color: white;
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 18px;
-    padding: 12px 3px; 
-    width: 110px; 
+    font-size: 15px;
+    font-weight: 500;
+    border: 3px solid #141313;
+    padding: 10px 12px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.body-table td:nth-child(1) { width: 150px; position: relative; left: 27px;} 
-.body-table td:nth-child(2) { width: 180px; position: relative; left: 43px; } 
-.body-table td:nth-child(3) { width: 40px;  }
+.body-table td:nth-child(3),
+.body-table td:nth-child(4) {
+    width: 60px;
+    text-align: center;
+} 
 
 .body-table input[type="checkbox"] {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
-    position: relative;
-    left: 25px;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
     accent-color: rgb(0, 245, 221);
-}
-
-.body-table td:nth-child(4) {
-    width: 90px;
 }
 
 .body-table .delete-btn {
@@ -316,8 +314,6 @@ html, body {
     font-size: 14px;
     cursor: pointer;
     text-decoration: none;
-    left: 55px;
-    position: relative !important;
 }
 
 .body-table .delete-btn:hover {
