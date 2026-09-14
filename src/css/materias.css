@@ -284,7 +284,7 @@ html, body {
 }
 
 .body-table td:nth-child(1) { width: 150px; position: relative; left: 14px;} 
-.body-table td:nth-child(2) { width: 180px; position: relative; left: 30px; } 
+.body-table td:nth-child(2) { width: 180px; position: relative; left: 12px; } 
 .body-table td:nth-child(3) { width: 40px;  }
 
 .body-table input[type="checkbox"] {
