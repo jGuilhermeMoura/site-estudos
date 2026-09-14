@@ -1,0 +1,67 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StudyLAB - Matérias</title>
+        <link rel="stylesheet" href="../css/materias.css">
+    </head>
+    <body>
+        <header>
+            <div class="retangulo-fundo-logo"></div>
+            <div class="option-select"></div>
+            <h1 class="text-logo">STUDY</h1>
+            <h1 class="text-logoresto">LAB</h1>
+            <h1 class="text-interface">Matérias</h1>
+
+            <div class="options">
+                <p class = option1>
+                    <a href="../../index.html">Dashboard</a>
+                </p>
+                <p class = option2>
+                    <a href="./materias.html">Matérias</a>
+                </p>
+                <p class = option3>
+                    <a href="./metas.html">Metas</a>
+                </p>
+                <p class = option4>
+                    <a href="./perfil">Perfil</a>
+                </p>
+            </div>
+            
+            <div class="hud-interno">
+                <div class="interno">
+                    <table>
+                    <thead>
+                        <tr class="title-table">
+                            <th>MATÉRIA</th>
+                            <th>CONTEÚDO</th>
+                            <th>OK</th>
+                        </tr>
+                    </thead>
+                    <tbody class="body-table"></tbody>
+                </table>
+                </div>
+                <h1 class="text-add-materia">Adicionar matéria:</h1>
+                
+                <div class="msg"></div>
+                <form class="add-materia-conteudo" id="formAddMateriaConteudo">
+                    <input type="text" placeholder="Ex: Matemática" id="nameMateria">
+                
+                    <h1 class="text-add-conteudo">Adicionar conteúdo:</h1>
+                    <input type="text" placeholder="Ex: Funções" id="nameConteudo">
+
+                    <button id="submit-materia-conteudo" type="submit">Adicionar</button>
+                </form>
+
+                
+            
+
+            </div>
+
+        </header>
+
+        <script  src="../js/materias.js"></script>
+
+    </body>
+    </html>

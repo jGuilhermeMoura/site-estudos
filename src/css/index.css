@@ -1,0 +1,140 @@
+@import url('https://googleapis.com');
+
+html, body {
+    background-color: #141313;
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.text-logo {
+    position: absolute;
+    font-family: 'Special Gothic Expanded One', sans-serif !important;
+    font-weight: 1000;
+    font-size: 30px;
+    top: 20px;
+    left: 22px;
+    color: white;
+    z-index: 10;
+    cursor: default;
+}
+.text-logoresto {
+    position: absolute;
+    font-family: 'Special Gothic Expanded One', sans-serif !important;
+    font-weight: 1000;
+    font-size: 30px;
+    top: 20px;  
+    left: 135px;
+    color: rgb(0, 245, 221);
+    z-index: 10; 
+    cursor: default;
+}
+
+.text-interface {
+    position: absolute;
+    font-family: 'Saira Condensed', sans-serif !important;
+    font-weight: 700;
+    font-size: 15px;
+    top: 18px;
+    left: 250px;
+    color: white;
+    z-index: 10;
+}
+
+.interno {
+    position: absolute;
+    left: 260px;
+    top: 200px;
+    width: 750px;
+    height: 495px;
+    background-color: #202020;
+    border: 3px solid #404040;
+    border-radius: 8%;
+}
+
+.retangulo-fundo-logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 15vw;
+    height: 100vh;
+    background-color: #202020;
+    border: 3px solid #404040;
+}
+
+.option-select {
+    position: absolute;
+    left: 233px;
+    top: 0px;
+    width: calc(100% - 115px);
+    height: 60px;
+    background-color: #141313;
+    border: 3px solid #404040;
+}
+
+.option1 a{
+    position: absolute;
+    font-family: 'Saira Condensed', sans-serif !important;
+    font-weight: 500;
+    font-size: 15px;
+    top: 30px;
+    left: 430px;
+    color: #989898;
+    z-index: 10;
+    text-decoration: none;
+}
+.option1:hover a {
+    text-decoration: none;
+    color: white;
+}
+
+.option2 a {
+    position: absolute;
+    font-family: 'Saira Condensed', sans-serif !important;
+    font-weight: 500;
+    font-size: 15px;
+    top: 30px;
+    left: 530px;
+    color: #989898;
+    z-index: 10;
+    text-decoration: none;
+}
+.option2:hover a {
+    text-decoration: none;
+    color: white;
+}
+
+.option3 a {
+    position: absolute;
+    font-family: 'Saira Condensed', sans-serif !important;
+    font-weight: 500;
+    font-size: 15px;
+    top: 30px;
+    left: 620px;
+    color: #989898;
+    z-index: 10;
+    text-decoration: none;
+}
+.option3:hover a {
+    text-decoration: none;
+    color: white;
+}
+
+.option4 a {
+    position: absolute;
+    font-family: 'Saira Condensed', sans-serif !important;
+    font-weight: 500;
+    font-size: 15px;
+    top: 30px;
+    left: 690px;
+    color: #989898;
+    z-index: 10;
+    text-decoration: none;
+}
+.option4:hover a {
+    text-decoration: none;
+    color: white;
+}
+
